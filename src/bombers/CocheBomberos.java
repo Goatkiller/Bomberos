@@ -12,7 +12,7 @@ import java.util.ArrayList;
  *
  * @author Jelly
  */
-public class CocheBomberos {
+public class CocheBomberos{
     private Bombero copyi, copyj, copyk, copyf, copyg, copyy;
     private ArrayList<Bombero> array;
     
@@ -21,13 +21,13 @@ public class CocheBomberos {
     }
     
     public void addUno(Bombero i){
-        copyi = i;
+        copyi = i.clone(i);
         array.add(copyi);
         copyi.setPuesto("Conductor");
         
     }
     public void addDos(Bombero i, Bombero j){
-        copyi=i;copyj=j;
+        copyi=i.clone(i);copyj=j.clone(j);
         array.add(copyi);
         array.add(copyj);
         copyi.setPuesto("Conductor");
@@ -35,7 +35,7 @@ public class CocheBomberos {
     }
     
     public void addTres(Bombero i, Bombero j, Bombero k){
-        copyi=i;copyj=j;copyk=k;
+        copyi=i.clone(i);copyj=j.clone(j);copyk=k.clone(k);
         array.add(copyi);
         array.add(copyj);
         array.add(copyk);
@@ -45,7 +45,7 @@ public class CocheBomberos {
     }
     
     public void addCuatro(Bombero i, Bombero j, Bombero k, Bombero f){
-        copyi=i;copyj=j;copyk=k;copyf=f;
+        copyi=i.clone(i);copyj=j.clone(j);copyk=k.clone(k);copyf=f.clone(f);
         array.add(copyi); array.add(copyj); array.add(copyk);array.add(copyf);
         copyi.setPuesto("Conductor");
         copyj.setPuesto("Manguera1");
@@ -54,7 +54,7 @@ public class CocheBomberos {
     }
     
     public void addCinco(Bombero i, Bombero j, Bombero k, Bombero f, Bombero g){
-        copyi=i;copyj=j;copyk=k;copyf=f;copyg=g;
+        copyi=i.clone(i);copyj=j.clone(j);copyk=k.clone(k);copyf=f.clone(f);copyg=g.clone(g);
         array.add(copyi); array.add(copyj); array.add(copyk); array.add(copyf); array.add(copyg);
         copyi.setPuesto("Conductor");
         copyj.setPuesto("Manguera1");
@@ -64,7 +64,7 @@ public class CocheBomberos {
     }
     
     public void addSeis(Bombero i, Bombero j, Bombero k, Bombero f, Bombero g, Bombero y){
-        copyi=i;copyj=j;copyk=k;copyf=f;copyg=g;copyy=y;
+        copyi=i.clone(i);copyj=j.clone(j);copyk=k.clone(k);copyf=f.clone(f);copyg=g.clone(g);copyy=y.clone(y);
         array.add(copyi); array.add(copyj); array.add(copyk); array.add(copyf); array.add(copyg);array.add(copyy);
         copyi.setPuesto("Conductor");
         copyj.setPuesto("Manguera1");

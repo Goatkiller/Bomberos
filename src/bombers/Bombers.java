@@ -19,13 +19,13 @@ public class Bombers {
     static int salario;
     static Scanner leer = new Scanner(System.in);
     static int i, j, k, f, g, y;
-    static CocheBomberos coche;
+    
 
     public static void main(String[] args) {
 
         System.out.println("Introducir nombre, edad, puesto y salario separados por espacios.");
         System.out.println("Bombero 1");
-        
+        CocheBomberos miCoche = new CocheBomberos();
         nombre = leer.next();
         edad = leer.nextInt();
         puesto = leer.next();
@@ -98,14 +98,18 @@ public class Bombers {
                         case 1:
                             System.out.println("Numero del bombero: ");
                             i = leer.nextInt()-1;
-                            coche = operacion.prepararCoche1(i);
+                            operacion.prepararCoche1(i);
+                            miCoche = operacion.prepararCoche1(i);
+                            System.out.println(miCoche.toString());
                             break;
                         case 2:
                             System.out.println("Primer bombero: ");
                             i = leer.nextInt()-1;
                             System.out.println("Segundo bombero: ");
                             j = leer.nextInt()-1;
-                            coche = operacion.prepararCoche2(i, j);
+                            operacion.prepararCoche2(i, j);
+                            miCoche = operacion.prepararCoche2(i, j);
+                            System.out.println(miCoche.toString());
                             break;
                         case 3:
                             System.out.println("Primer bombero: ");
@@ -114,7 +118,8 @@ public class Bombers {
                             j = leer.nextInt()-1;
                             System.out.println("Tercer bombero: ");
                             k = leer.nextInt()-1;
-                            coche = operacion.prepararCoche3(i, j, k);
+                            miCoche = operacion.prepararCoche3(i, j, k);
+                            System.out.println(miCoche.toString()); 
                             break;
                         case 4:
                             System.out.println("Primer bombero: ");
@@ -125,7 +130,9 @@ public class Bombers {
                             k = leer.nextInt()-1;
                             System.out.println("Cuarto bombero: ");
                             f = leer.nextInt()-1;
-                            coche = operacion.prepararCoche4(i, j, k, f);
+                            operacion.prepararCoche4(i, j, k, f);
+                            miCoche = operacion.prepararCoche4(i, j, k, f);
+                            System.out.println(miCoche.toString());
                             break;
                         case 5:
                             System.out.println("Primer bombero: ");
@@ -138,7 +145,9 @@ public class Bombers {
                             f = leer.nextInt()-1;
                             System.out.println("Quinto bombero: ");
                             g = leer.nextInt()-1;
-                            coche = operacion.prepararCoche5(i, j, k, f, g);
+                            operacion.prepararCoche5(i, j, k, f, g);
+                            miCoche = operacion.prepararCoche5(i, j, k,f,g);
+                            System.out.println(miCoche.toString());
                             break;
                         case 6:
                             System.out.println("Primer bombero: ");
@@ -153,7 +162,9 @@ public class Bombers {
                             g = leer.nextInt()-1;
                             System.out.println("Sexto bombero: ");
                             y = leer.nextInt()-1;
-                            coche = operacion.prepararCoche6(i, j, k, f, g, y);
+                            operacion.prepararCoche6(i, j, k, f, g, y);
+                            miCoche = operacion.prepararCoche6(i, j, k,f,g,y);
+                            System.out.println(miCoche.toString());
                             break;
                     }
 

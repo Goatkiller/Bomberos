@@ -66,5 +66,9 @@ public class Bombero {
         this.salario = salario;
     }
     
-    
+    public Bombero clone(Bombero b){
+        
+        Bombero x = new Bombero(b.getNombre(), b.getEdad(), b.getPuesto(), b.getSalario());
+        return x;
+    }
 }
