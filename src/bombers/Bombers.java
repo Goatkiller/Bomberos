@@ -100,7 +100,6 @@ public class Bombers {
                             i = leer.nextInt()-1;
                             operacion.prepararCoche1(i);
                             miCoche = operacion.prepararCoche1(i);
-                            System.out.println(miCoche.toString());
                             break;
                         case 2:
                             System.out.println("Primer bombero: ");
@@ -109,7 +108,6 @@ public class Bombers {
                             j = leer.nextInt()-1;
                             operacion.prepararCoche2(i, j);
                             miCoche = operacion.prepararCoche2(i, j);
-                            System.out.println(miCoche.toString());
                             break;
                         case 3:
                             System.out.println("Primer bombero: ");
@@ -118,8 +116,7 @@ public class Bombers {
                             j = leer.nextInt()-1;
                             System.out.println("Tercer bombero: ");
                             k = leer.nextInt()-1;
-                            miCoche = operacion.prepararCoche3(i, j, k);
-                            System.out.println(miCoche.toString()); 
+                            miCoche = operacion.prepararCoche3(i, j, k); 
                             break;
                         case 4:
                             System.out.println("Primer bombero: ");
@@ -132,7 +129,6 @@ public class Bombers {
                             f = leer.nextInt()-1;
                             operacion.prepararCoche4(i, j, k, f);
                             miCoche = operacion.prepararCoche4(i, j, k, f);
-                            System.out.println(miCoche.toString());
                             break;
                         case 5:
                             System.out.println("Primer bombero: ");
@@ -147,7 +143,6 @@ public class Bombers {
                             g = leer.nextInt()-1;
                             operacion.prepararCoche5(i, j, k, f, g);
                             miCoche = operacion.prepararCoche5(i, j, k,f,g);
-                            System.out.println(miCoche.toString());
                             break;
                         case 6:
                             System.out.println("Primer bombero: ");
@@ -164,7 +159,6 @@ public class Bombers {
                             y = leer.nextInt()-1;
                             operacion.prepararCoche6(i, j, k, f, g, y);
                             miCoche = operacion.prepararCoche6(i, j, k,f,g,y);
-                            System.out.println(miCoche.toString());
                             break;
                     }
 
